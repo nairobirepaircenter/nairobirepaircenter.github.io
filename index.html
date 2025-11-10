@@ -12,8 +12,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nairobirepair.co.ke/">
     <title>Appliance Repair in Nairobi | Nairobi Repair Center - Professional Service</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -62,8 +62,7 @@
         .hero-section {
             background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
             color: white;
-            padding: 80px 0;
-            margin-bottom: 50px;
+            padding: 120px 0 80px;
         }
         .service-icon {
             width: 80px;
@@ -71,82 +70,78 @@
             margin: 0 auto 20px;
         }
         .navbar {
-            margin-bottom: 0;
-            background-color: #8B0000;
-            border: none;
-        }
-        .navbar-brand, .navbar-nav > li > a {
-            color: white !important;
+            background-color: #8B0000 !important;
         }
         .section-title {
             color: #8B0000;
             margin-bottom: 30px;
+        }
+        .bg-dark-red {
+            background-color: #8B0000 !important;
         }
     </style>
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" itemscope itemtype="https://schema.org/SiteNavigationElement">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#home"><strong>Nairobi Repair Center</strong></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#brands">Brands</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="tel:+254770029959" class="btn btn-success" style="margin-top: 8px;"><i class="fa fa-phone"></i> Call Now</a></li>
+        <a class="navbar-brand fw-bold" href="#home">Nairobi Repair Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#brands">Brands</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="tel:+254770029959" class="btn btn-success ms-2"><i class="fa fa-phone"></i> Call Now</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
-<section id="home" class="hero-section" style="margin-top: 50px;" itemscope itemtype="https://schema.org/Service">
+<section id="home" class="hero-section" itemscope itemtype="https://schema.org/Service">
     <div class="container text-center">
-        <h1 class="text-white" itemprop="name"><strong>Best Appliance Repair in Nairobi</strong></h1>
-        <p class="lead" style="font-size: 22px; margin-top: 20px;" itemprop="description">Professional repair services for all household appliances across Nairobi County. Fast, reliable, and affordable solutions for your home.</p>
-        <p style="font-size: 18px; margin-top: 20px;">We fix cookers, ovens, washing machines, fridges, dishwashers, dryers, water dispensers, and microwaves from all major brands.</p>
-        <div style="margin-top: 40px;">
-            <a href="tel:+254770029959" class="btn btn-success btn-lg" style="margin: 10px;"><i class="fa fa-phone"></i> Call Us Now</a>
-            <a href="#about" class="btn btn-default btn-lg" style="margin: 10px; background: white; color: #8B0000;">Learn More</a>
-            <a href="#services" class="btn btn-warning btn-lg" style="margin: 10px;">Our Services</a>
+        <h1 class="display-4 fw-bold mb-4" itemprop="name">Best Appliance Repair in Nairobi</h1>
+        <p class="lead fs-4 mb-4" itemprop="description">Professional repair services for all household appliances across Nairobi County. Fast, reliable, and affordable solutions for your home.</p>
+        <p class="fs-5 mb-5">We fix cookers, ovens, washing machines, fridges, dishwashers, dryers, water dispensers, and microwaves from all major brands.</p>
+        <div>
+            <a href="tel:+254770029959" class="btn btn-success btn-lg m-2"><i class="fa fa-phone"></i> Call Us Now</a>
+            <a href="#about" class="btn btn-light btn-lg m-2" style="color: #8B0000;">Learn More</a>
+            <a href="#services" class="btn btn-warning btn-lg m-2">Our Services</a>
         </div>
     </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="container" style="margin-top: 50px; margin-bottom: 50px;" itemscope itemtype="https://schema.org/AboutPage">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2 class="section-title"><strong>About Nairobi Repair Center</strong></h2>
-            <p class="lead">Welcome to Nairobi Repair Center, your trusted partner for <strong>Best Appliance Repair in Nairobi</strong>. We are a leading appliance repair service provider dedicated to restoring your household appliances to optimal working condition.</p>
+<section id="about" class="py-5" itemscope itemtype="https://schema.org/AboutPage">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title fw-bold">About Nairobi Repair Center</h2>
+                <p class="lead">Welcome to Nairobi Repair Center, your trusted partner for <strong>Best Appliance Repair in Nairobi</strong>. We are a leading appliance repair service provider dedicated to restoring your household appliances to optimal working condition.</p>
+            </div>
         </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-4 text-center">
-            <h3><i class="fa fa-wrench" style="color: #8B0000; font-size: 40px;"></i></h3>
-            <h4><strong>Expert Technicians</strong></h4>
-            <p>Our certified technicians have years of experience repairing all major appliance brands and models.</p>
-        </div>
-        <div class="col-md-4 text-center">
-            <h3><i class="fa fa-clock-o" style="color: #8B0000; font-size: 40px;"></i></h3>
-            <h4><strong>Same-Day Service</strong></h4>
-            <p>We offer same-day repair services for emergency situations across most areas in Nairobi County.</p>
-        </div>
-        <div class="col-md-4 text-center">
-            <h3><i class="fa fa-check-circle" style="color: #8B0000; font-size: 40px;"></i></h3>
-            <h4><strong>Quality Guarantee</strong></h4>
-            <p>All repairs come with warranty coverage on both parts and labor for your peace of mind.</p>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <i class="fa fa-wrench fa-3x text-danger mb-3"></i>
+                <h4 class="fw-bold">Expert Technicians</h4>
+                <p>Our certified technicians have years of experience repairing all major appliance brands and models.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-clock fa-3x text-danger mb-3"></i>
+                <h4 class="fw-bold">Same-Day Service</h4>
+                <p>We offer same-day repair services for emergency situations across most areas in Nairobi County.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-check-circle fa-3x text-danger mb-3"></i>
+                <h4 class="fw-bold">Quality Guarantee</h4>
+                <p>All repairs come with warranty coverage on both parts and labor for your peace of mind.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -154,682 +149,432 @@
 <hr>
 
 <!-- Services Section -->
-<section id="services" class="container" style="margin-top: 50px; margin-bottom: 50px;">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2 class="section-title"><strong>Our Appliance Repair Services</strong></h2>
-            <p class="lead">Comprehensive repair solutions for all your household appliances</p>
+<section id="services" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title fw-bold">Our Appliance Repair Services</h2>
+                <p class="lead">Comprehensive repair solutions for all your household appliances</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Service 1: Cooker Repair -->
-    <div class="row" style="margin-top: 50px;" id="cooker-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Cooker Repair Icon">
-                    <title>Cooker Repair in Nairobi</title>
-                    <rect x="20" y="30" width="60" height="50" fill="#8B0000" rx="5"/>
-                    <circle cx="35" cy="45" r="6" fill="white"/>
-                    <circle cx="65" cy="45" r="6" fill="white"/>
-                    <rect x="25" y="60" width="50" height="15" fill="#DC143C"/>
-                    <rect x="45" y="20" width="10" height="15" fill="#8B0000"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>1. Cooker Repair in Nairobi</strong></h3>
+        <!-- Service 1: Cooker Repair -->
+        <div class="row mb-5" id="cooker-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Cooker Repair Icon">
+                        <title>Cooker Repair in Nairobi</title>
+                        <rect x="20" y="30" width="60" height="50" fill="#8B0000" rx="5"/>
+                        <circle cx="35" cy="45" r="6" fill="white"/>
+                        <circle cx="65" cy="45" r="6" fill="white"/>
+                        <rect x="25" y="60" width="50" height="15" fill="#DC143C"/>
+                        <rect x="45" y="20" width="10" height="15" fill="#8B0000"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">1. Cooker Repair in Nairobi</h3>
+                </div>
+                <p itemprop="description">When your cooker stops working, meal preparation becomes a major challenge. <strong>Best Appliance Repair in Nairobi</strong> specializes in repairing all types of cookers including electric cookers, gas cookers, and combination models. Our technicians handle both freestanding and built-in cooker repairs with expertise.</p>
+                
+                <h4 class="fw-bold">Common Cooker Problems We Fix:</h4>
+                <ul>
+                    <li>Heating elements not working or heating unevenly</li>
+                    <li>Gas burners failing to ignite or producing weak flames</li>
+                    <li>Oven temperature not reaching desired levels</li>
+                    <li>Thermostat malfunctions causing temperature fluctuations</li>
+                    <li>Control knobs and switches not responding</li>
+                    <li>Grill function not working properly</li>
+                    <li>Door seal damage affecting heat retention</li>
+                    <li>Timer and clock display issues</li>
+                    <li>Strange smells or smoke during operation</li>
+                    <li>Electrical faults and wiring problems</li>
+                </ul>
+
+                <h4 class="fw-bold">Our Cooker Repair Services Include:</h4>
+                <p>We provide comprehensive cooker repair services including heating element replacement, gas valve and igniter repairs, thermostat calibration and replacement, control panel repairs, door hinge and seal replacements, and complete electrical system diagnostics. For gas cookers, we ensure all safety systems are functioning properly and check for gas leaks.</p>
+
+                <h4 class="fw-bold">Cooker Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Fee</td>
+                                <td>500 - 1,000</td>
+                                <td>30 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Element Replacement</td>
+                                <td>2,000 - 4,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Thermostat Repair</td>
+                                <td>2,500 - 5,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Gas Valve Repair</td>
+                                <td>3,000 - 6,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Control Panel Repair</td>
+                                <td>3,500 - 7,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Complete Cooker Overhaul</td>
+                                <td>8,000 - 15,000</td>
+                                <td>3-5 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted fst-italic"><em>"Professional tip: Regular cleaning of cooker burners and elements can prevent 60% of common cooker problems. Always ensure proper ventilation when using gas cookers to prevent carbon monoxide buildup."</em></p>
             </div>
-            <p itemprop="description">When your cooker stops working, meal preparation becomes a major challenge. <strong>Best Appliance Repair in Nairobi</strong> specializes in repairing all types of cookers including electric cookers, gas cookers, and combination models. Our technicians handle both freestanding and built-in cooker repairs with expertise.</p>
-            
-            <h4><strong>Common Cooker Problems We Fix:</strong></h4>
-            <ul>
-                <li>Heating elements not working or heating unevenly</li>
-                <li>Gas burners failing to ignite or producing weak flames</li>
-                <li>Oven temperature not reaching desired levels</li>
-                <li>Thermostat malfunctions causing temperature fluctuations</li>
-                <li>Control knobs and switches not responding</li>
-                <li>Grill function not working properly</li>
-                <li>Door seal damage affecting heat retention</li>
-                <li>Timer and clock display issues</li>
-                <li>Strange smells or smoke during operation</li>
-                <li>Electrical faults and wiring problems</li>
-            </ul>
-
-            <h4><strong>Our Cooker Repair Services Include:</strong></h4>
-            <p>We provide comprehensive cooker repair services including heating element replacement, gas valve and igniter repairs, thermostat calibration and replacement, control panel repairs, door hinge and seal replacements, and complete electrical system diagnostics. For gas cookers, we ensure all safety systems are functioning properly and check for gas leaks.</p>
-
-            <h4><strong>Cooker Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Fee</td>
-                            <td>500 - 1,000</td>
-                            <td>30 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Element Replacement</td>
-                            <td>2,000 - 4,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Thermostat Repair</td>
-                            <td>2,500 - 5,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Gas Valve Repair</td>
-                            <td>3,000 - 6,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Control Panel Repair</td>
-                            <td>3,500 - 7,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Complete Cooker Overhaul</td>
-                            <td>8,000 - 15,000</td>
-                            <td>3-5 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Professional tip: Regular cleaning of cooker burners and elements can prevent 60% of common cooker problems. Always ensure proper ventilation when using gas cookers to prevent carbon monoxide buildup."</em></p>
         </div>
-    </div>
 
-    <hr style="margin: 50px 0;">
+        <hr class="my-5">
 
-    <!-- Service 2: Oven Repair -->
-    <div class="row" style="margin-top: 50px;" id="oven-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Oven Repair Icon">
-                    <title>Oven Repair in Nairobi</title>
-                    <rect x="15" y="25" width="70" height="55" fill="#8B0000" rx="5"/>
-                    <rect x="20" y="35" width="60" height="35" fill="#DC143C"/>
-                    <circle cx="30" cy="75" r="3" fill="white"/>
-                    <circle cx="45" cy="75" r="3" fill="white"/>
-                    <circle cx="60" cy="75" r="3" fill="white"/>
-                    <rect x="75" y="30" width="5" height="20" fill="white"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>2. Oven Repair in Nairobi</strong></h3>
+        <!-- Service 2: Oven Repair -->
+        <div class="row mb-5" id="oven-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Oven Repair Icon">
+                        <title>Oven Repair in Nairobi</title>
+                        <rect x="15" y="25" width="70" height="55" fill="#8B0000" rx="5"/>
+                        <rect x="20" y="35" width="60" height="35" fill="#DC143C"/>
+                        <circle cx="30" cy="75" r="3" fill="white"/>
+                        <circle cx="45" cy="75" r="3" fill="white"/>
+                        <circle cx="60" cy="75" r="3" fill="white"/>
+                        <rect x="75" y="30" width="5" height="20" fill="white"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">2. Oven Repair in Nairobi</h3>
+                </div>
+                <p itemprop="description">Ovens are essential for baking and roasting, and when they malfunction, your cooking options become limited. Our <strong>Best Appliance Repair in Nairobi</strong> team provides expert oven repair services for electric ovens, gas ovens, convection ovens, and microwave ovens.</p>
+                
+                <h4 class="fw-bold">Oven Issues We Address:</h4>
+                <ul>
+                    <li>Oven not heating to correct temperature</li>
+                    <li>Uneven heating causing poor cooking results</li>
+                    <li>Oven door not closing or sealing properly</li>
+                    <li>Self-cleaning function not working</li>
+                    <li>Oven light not functioning</li>
+                    <li>Control panel displaying error codes</li>
+                    <li>Gas oven igniter problems</li>
+                    <li>Convection fan not operating</li>
+                    <li>Timer and temperature controls malfunctioning</li>
+                    <li>Strange noises during operation</li>
+                </ul>
+
+                <h4 class="fw-bold">Professional Fridge Repair Services:</h4>
+                <p>Our refrigerator repair services include compressor repair and replacement, refrigerant recharging, thermostat calibration, evaporator and condenser coil cleaning, door seal replacement, defrost system repairs, fan motor replacement, ice maker repairs, water inlet valve replacement, and control board diagnostics. We handle both refrigeration and freezer issues efficiently.</p>
+
+                <h4 class="fw-bold">Fridge Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Assessment</td>
+                                <td>500 - 1,000</td>
+                                <td>30-45 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Thermostat Replacement</td>
+                                <td>2,000 - 4,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Door Seal Replacement</td>
+                                <td>1,500 - 3,500</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Compressor Replacement</td>
+                                <td>8,000 - 18,000</td>
+                                <td>3-5 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Refrigerant Recharge</td>
+                                <td>3,000 - 6,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Ice Maker Repair</td>
+                                <td>2,500 - 5,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted fst-italic"><em>"Efficiency tip: Clean refrigerator coils every 6 months to improve cooling efficiency and reduce energy consumption by up to 25%. Keep your fridge at 3-4°C and freezer at -18°C for optimal performance."</em></p>
             </div>
-            <p itemprop="description">Ovens are essential for baking and roasting, and when they malfunction, your cooking options become limited. Our <strong>Best Appliance Repair in Nairobi</strong> team provides expert oven repair services for electric ovens, gas ovens, convection ovens, and microwave ovens.</p>
-            
-            <h4><strong>Oven Issues We Address:</strong></h4>
-            <ul>
-                <li>Oven not heating to correct temperature</li>
-                <li>Uneven heating causing poor cooking results</li>
-                <li>Oven door not closing or sealing properly</li>
-                <li>Self-cleaning function not working</li>
-                <li>Oven light not functioning</li>
-                <li>Control panel displaying error codes</li>
-                <li>Gas oven igniter problems</li>
-                <li>Convection fan not operating</li>
-                <li>Timer and temperature controls malfunctioning</li>
-                <li>Strange noises during operation</li>
-            </ul>
-
-            <h4><strong>Professional Oven Repairs:</strong></h4>
-            <p>Our oven repair services cover heating element testing and replacement, thermostat calibration for accurate temperature control, door seal and hinge repairs, igniter replacement for gas ovens, fan motor repairs for convection ovens, control board diagnostics and repairs, and safety system checks. We ensure your oven operates safely and efficiently.</p>
-
-            <h4><strong>Oven Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Inspection</td>
-                            <td>500 - 1,000</td>
-                            <td>30-45 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Heating Element Replacement</td>
-                            <td>2,500 - 5,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Thermostat Calibration</td>
-                            <td>2,000 - 4,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Door Seal Replacement</td>
-                            <td>1,500 - 3,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Igniter Replacement (Gas)</td>
-                            <td>3,000 - 6,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Control Board Repair</td>
-                            <td>4,000 - 8,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Maintenance advice: Calibrate your oven temperature every 6 months to ensure accurate cooking. A temperature variance of just 25 degrees can significantly affect baking results."</em></p>
         </div>
-    </div>
 
-    <hr style="margin: 50px 0;">
+        <hr class="my-5">
 
-    <!-- Service 3: Washing Machine Repair -->
-    <div class="row" style="margin-top: 50px;" id="washing-machine-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Washing Machine Repair Icon">
-                    <title>Washing Machine Repair in Nairobi</title>
-                    <rect x="20" y="15" width="60" height="70" fill="#8B0000" rx="5"/>
-                    <circle cx="50" cy="50" r="20" fill="#DC143C" stroke="white" stroke-width="2"/>
-                    <circle cx="35" cy="25" r="3" fill="white"/>
-                    <circle cx="50" cy="25" r="3" fill="white"/>
-                    <circle cx="65" cy="25" r="3" fill="white"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>3. Washing Machine Repair in Nairobi</strong></h3>
+        <!-- Service 6: Tumble Dryer Repair -->
+        <div class="row mb-5" id="dryer-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Tumble Dryer Repair Icon">
+                        <title>Tumble Dryer Repair in Nairobi</title>
+                        <rect x="20" y="20" width="60" height="60" fill="#8B0000" rx="5"/>
+                        <circle cx="50" cy="50" r="18" fill="#DC143C" stroke="white" stroke-width="2"/>
+                        <circle cx="35" cy="30" r="3" fill="white"/>
+                        <circle cx="50" cy="30" r="3" fill="white"/>
+                        <circle cx="65" cy="30" r="3" fill="white"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">6. Tumble Dryer Repair in Nairobi</h3>
+                </div>
+                <p itemprop="description">Tumble dryers are convenient appliances that save time and effort in drying clothes, especially during rainy seasons. When your dryer stops working, you're forced to air-dry clothes which can take days in humid weather. Our experts provide reliable tumble dryer repair services across Nairobi.</p>
+                
+                <h4 class="fw-bold">Tumble Dryer Issues We Resolve:</h4>
+                <ul>
+                    <li>Dryer not heating or heating insufficiently</li>
+                    <li>Drum not rotating or turning slowly</li>
+                    <li>Excessive noise during operation</li>
+                    <li>Dryer taking too long to dry clothes</li>
+                    <li>Control panel not responding</li>
+                    <li>Door not closing or latching properly</li>
+                    <li>Overheating and automatic shutoff</li>
+                    <li>Lint buildup and ventilation problems</li>
+                    <li>Timer malfunctions</li>
+                    <li>Burning smell during operation</li>
+                </ul>
+
+                <h4 class="fw-bold">Tumble Dryer Repair Solutions:</h4>
+                <p>We provide complete dryer repair services including heating element testing and replacement, drum belt and roller repairs, motor and pulley system repairs, thermostat and thermal fuse replacement, door seal and latch repairs, lint filter cleaning, ventilation system inspection and cleaning, control board repairs, and timer replacement. Our technicians ensure safe and efficient dryer operation.</p>
+
+                <h4 class="fw-bold">Tumble Dryer Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Check</td>
+                                <td>500 - 1,000</td>
+                                <td>30 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Heating Element Replacement</td>
+                                <td>3,000 - 6,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Belt Replacement</td>
+                                <td>2,000 - 4,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Motor Replacement</td>
+                                <td>5,000 - 10,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Thermostat Replacement</td>
+                                <td>1,500 - 3,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Control Board Repair</td>
+                                <td>4,000 - 8,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted fst-italic"><em>"Safety reminder: Clean the lint filter after every load and deep clean the ventilation duct annually. Lint buildup is a major fire hazard and reduces dryer efficiency by up to 30%."</em></p>
             </div>
-            <p itemprop="description">Washing machines are among the most frequently used appliances in any household. When your washing machine breaks down, laundry piles up quickly. Our team at <strong>Best Appliance Repair in Nairobi</strong> specializes in <a href="https://washingmachinerepairs.co.ke/" target="_blank" rel="noopener">washing machine repair in Nairobi</a>, handling both top-loading and front-loading models from all major brands.</p>
-            
-            <h4><strong>Washing Machine Problems We Solve:</strong></h4>
-            <ul>
-                <li>Machine not starting or powering on</li>
-                <li>Drum not spinning or spinning poorly</li>
-                <li>Water not draining after wash cycle</li>
-                <li>Excessive vibration and loud noises</li>
-                <li>Water leaking from machine</li>
-                <li>Door won't lock or unlock</li>
-                <li>Error codes displayed on control panel</li>
-                <li>Clothes coming out wet after spin cycle</li>
-                <li>Water not filling or filling slowly</li>
-                <li>Foul odors from machine interior</li>
-            </ul>
-
-            <h4><strong>Comprehensive Washing Machine Repairs:</strong></h4>
-            <p>We provide complete washing machine repair services including motor and drive belt replacement, pump cleaning and replacement, drum bearing repairs, water inlet valve repairs, door lock mechanism fixes, control board diagnostics and repairs, suspension system repairs, filter cleaning, and hose replacement. Our technicians carry common spare parts for immediate repairs.</p>
-
-            <h4><strong>Washing Machine Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Check</td>
-                            <td>500 - 1,000</td>
-                            <td>30 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Pump Replacement</td>
-                            <td>2,500 - 5,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Motor Replacement</td>
-                            <td>5,000 - 10,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Drum Bearing Replacement</td>
-                            <td>6,000 - 12,000</td>
-                            <td>3-4 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Door Lock Repair</td>
-                            <td>1,500 - 3,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Control Board Repair</td>
-                            <td>4,000 - 8,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Care tip: Clean your washing machine filter every month and run a hot water cycle with vinegar quarterly to prevent buildup and odors. This simple maintenance can extend your machine's life by years."</em></p>
         </div>
-    </div>
 
-    <hr style="margin: 50px 0;">
+        <hr class="my-5">
 
-    <!-- Service 4: Dishwasher Repair -->
-    <div class="row" style="margin-top: 50px;" id="dishwasher-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Dishwasher Repair Icon">
-                    <title>Dishwasher Repair in Nairobi</title>
-                    <rect x="25" y="20" width="50" height="60" fill="#8B0000" rx="3"/>
-                    <rect x="30" y="30" width="40" height="45" fill="#DC143C"/>
-                    <line x1="35" y1="35" x2="65" y2="35" stroke="white" stroke-width="2"/>
-                    <line x1="35" y1="45" x2="65" y2="45" stroke="white" stroke-width="2"/>
-                    <line x1="35" y1="55" x2="65" y2="55" stroke="white" stroke-width="2"/>
-                    <circle cx="35" cy="25" r="2" fill="white"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>4. Dishwasher Repair in Nairobi</strong></h3>
+        <!-- Service 7: Water Dispenser Repair -->
+        <div class="row mb-5" id="water-dispenser-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Water Dispenser Repair Icon">
+                        <title>Water Dispenser Repair in Nairobi</title>
+                        <rect x="30" y="20" width="40" height="60" fill="#8B0000" rx="3"/>
+                        <circle cx="50" cy="35" r="8" fill="#DC143C"/>
+                        <rect x="35" y="50" width="30" height="25" fill="#DC143C"/>
+                        <rect x="40" y="65" width="8" height="3" fill="white"/>
+                        <rect x="52" y="65" width="8" height="3" fill="white"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">7. Water Dispenser Repair in Nairobi</h3>
+                </div>
+                <p itemprop="description">Water dispensers provide convenient access to cold and hot drinking water in homes and offices. When they malfunction, access to clean drinking water becomes inconvenient. <strong>Best Appliance Repair in Nairobi</strong> offers professional water dispenser repair services for all brands and models including top-loading and bottom-loading dispensers.</p>
+                
+                <h4 class="fw-bold">Water Dispenser Problems We Fix:</h4>
+                <ul>
+                    <li>Water not cooling or heating properly</li>
+                    <li>Leaking from dispenser base or taps</li>
+                    <li>No power or electrical failures</li>
+                    <li>Compressor not running</li>
+                    <li>Thermostat malfunctions</li>
+                    <li>Tap and faucet leaks or damage</li>
+                    <li>Bottle holder cracks or breaks</li>
+                    <li>Drip tray overflow issues</li>
+                    <li>Control panel problems</li>
+                    <li>Strange tastes or odors in water</li>
+                </ul>
+
+                <h4 class="fw-bold">Water Dispenser Repair Services:</h4>
+                <p>Our water dispenser repairs include compressor repair and replacement, thermostat testing and replacement, heating element repairs, tap and faucet replacement, electrical system diagnostics, filter replacement, internal tank cleaning and sanitization, bottle holder repairs, and complete system servicing. We ensure your dispenser provides safe, clean drinking water.</p>
+
+                <h4 class="fw-bold">Water Dispenser Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Service</td>
+                                <td>500 - 1,000</td>
+                                <td>30 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Thermostat Replacement</td>
+                                <td>1,500 - 3,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Compressor Replacement</td>
+                                <td>4,000 - 8,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Tap/Faucet Replacement</td>
+                                <td>800 - 1,500</td>
+                                <td>30 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Heating Element Replacement</td>
+                                <td>2,000 - 4,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Complete System Cleaning</td>
+                                <td>1,500 - 2,500</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted fst-italic"><em>"Hygiene tip: Clean and sanitize your water dispenser every 3 months to prevent bacterial growth. Always use filtered or purified water to extend the lifespan of internal components."</em></p>
             </div>
-            <p itemprop="description">Dishwashers save valuable time and provide superior cleaning compared to hand washing. When your dishwasher malfunctions, returning to manual dish washing is inconvenient and time-consuming. Our <strong>Best Appliance Repair in Nairobi</strong> technicians are experts in dishwasher repair for all brands and models.</p>
-            
-            <h4><strong>Dishwasher Problems We Fix:</strong></h4>
-            <ul>
-                <li>Dishes coming out dirty or with food residue</li>
-                <li>Water not draining properly after cycle</li>
-                <li>Machine not filling with water</li>
-                <li>Unusual grinding or humming noises</li>
-                <li>Door latch not engaging or closing</li>
-                <li>Heating element not working</li>
-                <li>Spray arms not rotating effectively</li>
-                <li>Detergent dispenser malfunctions</li>
-                <li>Control panel errors and display issues</li>
-                <li>Water leaking from door or base</li>
-            </ul>
-
-            <h4><strong>Expert Dishwasher Repair Services:</strong></h4>
-            <p>We offer comprehensive dishwasher repairs including pump cleaning and replacement, heating element testing and replacement, spray arm repairs, door seal and latch repairs, control board diagnostics, water inlet valve repairs, drain hose cleaning, filter replacement, and rack repair or replacement. We ensure your dishwasher cleans dishes effectively and efficiently.</p>
-
-            <h4><strong>Dishwasher Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Service</td>
-                            <td>500 - 1,000</td>
-                            <td>30 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Pump Repair/Replacement</td>
-                            <td>3,000 - 6,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Heating Element Replacement</td>
-                            <td>2,500 - 5,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Door Seal Replacement</td>
-                            <td>1,500 - 3,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Spray Arm Replacement</td>
-                            <td>1,000 - 2,500</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Control Board Repair</td>
-                            <td>4,000 - 8,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Usage tip: Scrape large food particles before loading dishes and clean the filter monthly. Use rinse aid to prevent water spots and ensure proper drying for sparkling clean dishes every time."</em></p>
         </div>
-    </div>
 
-    <hr style="margin: 50px 0;">
+        <hr class="my-5">
 
-    <!-- Service 5: Fridge Repair -->
-    <div class="row" style="margin-top: 50px;" id="fridge-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Fridge Repair Icon">
-                    <title>Fridge Repair in Nairobi</title>
-                    <rect x="30" y="15" width="40" height="70" fill="#8B0000" rx="3"/>
-                    <line x1="30" y1="50" x2="70" y2="50" stroke="white" stroke-width="2"/>
-                    <rect x="35" y="25" width="5" height="15" fill="white"/>
-                    <rect x="35" y="60" width="5" height="15" fill="white"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>5. Fridge Repair in Nairobi</strong></h3>
+        <!-- Service 8: Microwave Repair -->
+        <div class="row mb-5" id="microwave-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Microwave Repair Icon">
+                        <title>Microwave Repair in Nairobi</title>
+                        <rect x="20" y="30" width="60" height="40" fill="#8B0000" rx="3"/>
+                        <rect x="25" y="35" width="40" height="30" fill="#DC143C"/>
+                        <circle cx="70" cy="45" r="3" fill="white"/>
+                        <circle cx="70" cy="55" r="3" fill="white"/>
+                        <rect x="15" y="70" width="70" height="5" fill="#8B0000"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">8. Microwave Repair in Nairobi</h3>
+                </div>
+                <p itemprop="description">Microwave ovens are essential for quick heating and cooking in modern kitchens. When your microwave stops working, meal preparation becomes more time-consuming. Our technicians provide expert microwave repair services for all types including countertop, over-the-range, and built-in models.</p>
+                
+                <h4 class="fw-bold">Microwave Problems We Address:</h4>
+                <ul>
+                    <li>Microwave not heating food</li>
+                    <li>Turntable not rotating</li>
+                    <li>Control panel buttons not working</li>
+                    <li>Door not closing or latching properly</li>
+                    <li>Sparking or arcing inside microwave</li>
+                    <li>Display not showing or showing errors</li>
+                    <li>Ventilation fan not working</li>
+                    <li>Interior light not functioning</li>
+                    <li>Unusual noises during operation</li>
+                    <li>Power issues and circuit problems</li>
+                </ul>
+
+                <h4 class="fw-bold">Professional Microwave Repairs:</h4>
+                <p>We offer comprehensive microwave repair services including magnetron testing and replacement, door switch and latch repairs, control panel and touchpad repairs, turntable motor replacement, high voltage diode and capacitor replacement, transformer repairs, cooling fan repairs, and interior light replacement. All repairs are performed following strict safety protocols.</p>
+
+                <h4 class="fw-bold">Microwave Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Inspection</td>
+                                <td>500 - 1,000</td>
+                                <td>30 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Door Switch Replacement</td>
+                                <td>1,000 - 2,000</td>
+                                <td>30-45 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Magnetron Replacement</td>
+                                <td>3,500 - 7,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Control Panel Repair</td>
+                                <td>2,000 - 4,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Turntable Motor Replacement</td>
+                                <td>1,500 - 3,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>High Voltage Component Replacement</td>
+                                <td>2,500 - 5,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted fst-italic"><em>"Safety warning: Never attempt DIY microwave repairs as they contain high-voltage components that can be lethal even when unplugged. Always use microwave-safe containers and avoid running the microwave empty."</em></p>
             </div>
-            <p itemprop="description">Refrigerators are critical appliances that operate 24/7 to preserve food and prevent spoilage. A malfunctioning fridge can lead to food waste and health concerns. <strong>Best Appliance Repair in Nairobi</strong> provides fast, reliable refrigerator repair services for all types including single-door, double-door, side-by-side, and French door models.</p>
-            
-            <h4><strong>Common Fridge Problems We Address:</strong></h4>
-            <ul>
-                <li>Refrigerator not cooling or freezing properly</li>
-                <li>Excessive frost buildup in freezer</li>
-                <li>Water leaking inside or outside fridge</li>
-                <li>Unusual noises - buzzing, clicking, or humming</li>
-                <li>Ice maker not producing ice</li>
-                <li>Water dispenser not working</li>
-                <li>Door seal damaged causing air leaks</li>
-                <li>Thermostat not maintaining temperature</li>
-                <li>Compressor running constantly</li>
-                <li>Condensation on exterior surfaces</li>
-            </ul>
-
-            <h4><strong>Professional Fridge Repair Services:</strong></h4>
-            <p>Our refrigerator repair services include compressor repair and replacement, refrigerant recharging, thermostat calibration, evaporator and condenser coil cleaning, door seal replacement, defrost system repairs, fan motor replacement, ice maker repairs, water inlet valve replacement, and control board diagnostics. We handle both refrigeration and freezer issues efficiently.</p>
-
-            <h4><strong>Fridge Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Assessment</td>
-                            <td>500 - 1,000</td>
-                            <td>30-45 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Thermostat Replacement</td>
-                            <td>2,000 - 4,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Door Seal Replacement</td>
-                            <td>1,500 - 3,500</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Compressor Replacement</td>
-                            <td>8,000 - 18,000</td>
-                            <td>3-5 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Refrigerant Recharge</td>
-                            <td>3,000 - 6,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Ice Maker Repair</td>
-                            <td>2,500 - 5,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Efficiency tip: Clean refrigerator coils every 6 months to improve cooling efficiency and reduce energy consumption by up to 25%. Keep your fridge at 3-4°C and freezer at -18°C for optimal performance."</em></p>
-        </div>
-    </div>
-
-    <hr style="margin: 50px 0;">
-
-    <!-- Service 6: Tumble Dryer Repair -->
-    <div class="row" style="margin-top: 50px;" id="dryer-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Tumble Dryer Repair Icon">
-                    <title>Tumble Dryer Repair in Nairobi</title>
-                    <rect x="20" y="20" width="60" height="60" fill="#8B0000" rx="5"/>
-                    <circle cx="50" cy="50" r="18" fill="#DC143C" stroke="white" stroke-width="2"/>
-                    <circle cx="35" cy="30" r="3" fill="white"/>
-                    <circle cx="50" cy="30" r="3" fill="white"/>
-                    <circle cx="65" cy="30" r="3" fill="white"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>6. Tumble Dryer Repair in Nairobi</strong></h3>
-            </div>
-            <p itemprop="description">Tumble dryers are convenient appliances that save time and effort in drying clothes, especially during rainy seasons. When your dryer stops working, you're forced to air-dry clothes which can take days in humid weather. Our experts provide reliable tumble dryer repair services across Nairobi.</p>
-            
-            <h4><strong>Tumble Dryer Issues We Resolve:</strong></h4>
-            <ul>
-                <li>Dryer not heating or heating insufficiently</li>
-                <li>Drum not rotating or turning slowly</li>
-                <li>Excessive noise during operation</li>
-                <li>Dryer taking too long to dry clothes</li>
-                <li>Control panel not responding</li>
-                <li>Door not closing or latching properly</li>
-                <li>Overheating and automatic shutoff</li>
-                <li>Lint buildup and ventilation problems</li>
-                <li>Timer malfunctions</li>
-                <li>Burning smell during operation</li>
-            </ul>
-
-            <h4><strong>Tumble Dryer Repair Solutions:</strong></h4>
-            <p>We provide complete dryer repair services including heating element testing and replacement, drum belt and roller repairs, motor and pulley system repairs, thermostat and thermal fuse replacement, door seal and latch repairs, lint filter cleaning, ventilation system inspection and cleaning, control board repairs, and timer replacement. Our technicians ensure safe and efficient dryer operation.</p>
-
-            <h4><strong>Tumble Dryer Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Check</td>
-                            <td>500 - 1,000</td>
-                            <td>30 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Heating Element Replacement</td>
-                            <td>3,000 - 6,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Belt Replacement</td>
-                            <td>2,000 - 4,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Motor Replacement</td>
-                            <td>5,000 - 10,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Thermostat Replacement</td>
-                            <td>1,500 - 3,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Control Board Repair</td>
-                            <td>4,000 - 8,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Safety reminder: Clean the lint filter after every load and deep clean the ventilation duct annually. Lint buildup is a major fire hazard and reduces dryer efficiency by up to 30%."</em></p>
-        </div>
-    </div>
-
-    <hr style="margin: 50px 0;">
-
-    <!-- Service 7: Water Dispenser Repair -->
-    <div class="row" style="margin-top: 50px;" id="water-dispenser-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Water Dispenser Repair Icon">
-                    <title>Water Dispenser Repair in Nairobi</title>
-                    <rect x="30" y="20" width="40" height="60" fill="#8B0000" rx="3"/>
-                    <circle cx="50" cy="35" r="8" fill="#DC143C"/>
-                    <rect x="35" y="50" width="30" height="25" fill="#DC143C"/>
-                    <rect x="40" y="65" width="8" height="3" fill="white"/>
-                    <rect x="52" y="65" width="8" height="3" fill="white"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>7. Water Dispenser Repair in Nairobi</strong></h3>
-            </div>
-            <p itemprop="description">Water dispensers provide convenient access to cold and hot drinking water in homes and offices. When they malfunction, access to clean drinking water becomes inconvenient. <strong>Best Appliance Repair in Nairobi</strong> offers professional water dispenser repair services for all brands and models including top-loading and bottom-loading dispensers.</p>
-            
-            <h4><strong>Water Dispenser Problems We Fix:</strong></h4>
-            <ul>
-                <li>Water not cooling or heating properly</li>
-                <li>Leaking from dispenser base or taps</li>
-                <li>No power or electrical failures</li>
-                <li>Compressor not running</li>
-                <li>Thermostat malfunctions</li>
-                <li>Tap and faucet leaks or damage</li>
-                <li>Bottle holder cracks or breaks</li>
-                <li>Drip tray overflow issues</li>
-                <li>Control panel problems</li>
-                <li>Strange tastes or odors in water</li>
-            </ul>
-
-            <h4><strong>Water Dispenser Repair Services:</strong></h4>
-            <p>Our water dispenser repairs include compressor repair and replacement, thermostat testing and replacement, heating element repairs, tap and faucet replacement, electrical system diagnostics, filter replacement, internal tank cleaning and sanitization, bottle holder repairs, and complete system servicing. We ensure your dispenser provides safe, clean drinking water.</p>
-
-            <h4><strong>Water Dispenser Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Service</td>
-                            <td>500 - 1,000</td>
-                            <td>30 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Thermostat Replacement</td>
-                            <td>1,500 - 3,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Compressor Replacement</td>
-                            <td>4,000 - 8,000</td>
-                            <td>2-3 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Tap/Faucet Replacement</td>
-                            <td>800 - 1,500</td>
-                            <td>30 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Heating Element Replacement</td>
-                            <td>2,000 - 4,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Complete System Cleaning</td>
-                            <td>1,500 - 2,500</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Hygiene tip: Clean and sanitize your water dispenser every 3 months to prevent bacterial growth. Always use filtered or purified water to extend the lifespan of internal components."</em></p>
-        </div>
-    </div>
-
-    <hr style="margin: 50px 0;">
-
-    <!-- Service 8: Microwave Repair -->
-    <div class="row" style="margin-top: 50px;" id="microwave-repair" itemscope itemtype="https://schema.org/Service">
-        <div class="col-md-12">
-            <div class="text-center">
-                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Microwave Repair Icon">
-                    <title>Microwave Repair in Nairobi</title>
-                    <rect x="20" y="30" width="60" height="40" fill="#8B0000" rx="3"/>
-                    <rect x="25" y="35" width="40" height="30" fill="#DC143C"/>
-                    <circle cx="70" cy="45" r="3" fill="white"/>
-                    <circle cx="70" cy="55" r="3" fill="white"/>
-                    <rect x="15" y="70" width="70" height="5" fill="#8B0000"/>
-                </svg>
-                <h3 class="section-title" itemprop="name"><strong>8. Microwave Repair in Nairobi</strong></h3>
-            </div>
-            <p itemprop="description">Microwave ovens are essential for quick heating and cooking in modern kitchens. When your microwave stops working, meal preparation becomes more time-consuming. Our technicians provide expert microwave repair services for all types including countertop, over-the-range, and built-in models.</p>
-            
-            <h4><strong>Microwave Problems We Address:</strong></h4>
-            <ul>
-                <li>Microwave not heating food</li>
-                <li>Turntable not rotating</li>
-                <li>Control panel buttons not working</li>
-                <li>Door not closing or latching properly</li>
-                <li>Sparking or arcing inside microwave</li>
-                <li>Display not showing or showing errors</li>
-                <li>Ventilation fan not working</li>
-                <li>Interior light not functioning</li>
-                <li>Unusual noises during operation</li>
-                <li>Power issues and circuit problems</li>
-            </ul>
-
-            <h4><strong>Professional Microwave Repairs:</strong></h4>
-            <p>We offer comprehensive microwave repair services including magnetron testing and replacement, door switch and latch repairs, control panel and touchpad repairs, turntable motor replacement, high voltage diode and capacitor replacement, transformer repairs, cooling fan repairs, and interior light replacement. All repairs are performed following strict safety protocols.</p>
-
-            <h4><strong>Microwave Repair Service Costs</strong></h4>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #8B0000; color: white;">
-                        <tr>
-                            <th>Repair Type</th>
-                            <th>Cost Range (Ksh)</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Diagnostic Inspection</td>
-                            <td>500 - 1,000</td>
-                            <td>30 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Door Switch Replacement</td>
-                            <td>1,000 - 2,000</td>
-                            <td>30-45 minutes</td>
-                        </tr>
-                        <tr>
-                            <td>Magnetron Replacement</td>
-                            <td>3,500 - 7,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Control Panel Repair</td>
-                            <td>2,000 - 4,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>Turntable Motor Replacement</td>
-                            <td>1,500 - 3,000</td>
-                            <td>1 hour</td>
-                        </tr>
-                        <tr>
-                            <td>High Voltage Component Replacement</td>
-                            <td>2,500 - 5,000</td>
-                            <td>1-2 hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="text-muted"><em>"Safety warning: Never attempt DIY microwave repairs as they contain high-voltage components that can be lethal even when unplugged. Always use microwave-safe containers and avoid running the microwave empty."</em></p>
         </div>
     </div>
 </section>
@@ -837,21 +582,25 @@
 <hr>
 
 <!-- Brands Section -->
-<section id="brands" class="container" style="margin-top: 50px; margin-bottom: 50px;" itemscope itemtype="https://schema.org/ItemList">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2 class="section-title"><strong>Appliance Brands We Service</strong></h2>
-            <p class="lead">Our technicians are trained to repair all major appliance brands available in Kenya</p>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-12">
-            <div class="well" style="background-color: #f9f9f9;">
-                <p style="font-size: 16px; line-height: 2; text-align: center;">
-                    <strong>SAMSUNG</strong> | <strong>LG</strong> | <strong>BEKO</strong> | <strong>BOSCH</strong> | <strong>WHIRLPOOL</strong> | <strong>ARISTON</strong> | <strong>VON HOTPOINT</strong> | <strong>SIEMENS</strong> | <strong>ELECTROLUX</strong> | <strong>RAMTONS</strong> | <strong>ELBA</strong> | <strong>AMANA</strong> | <strong>HOOVER</strong> | <strong>MIELE</strong> | <strong>ZANUSSI</strong> | <strong>PANASONIC</strong> | <strong>FISHER & PAYKEL</strong> | <strong>BRUHM</strong> | <strong>HITACHI</strong> | <strong>FRIGIDAIRE</strong> | <strong>HAIER</strong> | <strong>HP</strong> | <strong>CANDY</strong> | <strong>BAUKNECHT</strong> | <strong>DAEWOO</strong> | <strong>KITCHENAID</strong> | <strong>NEFF</strong> | <strong>IKEA</strong> | <strong>TOSHIBA</strong> | <strong>KENMORE</strong> | <strong>INDESIT</strong> | <strong>MIKA</strong> | <strong>SHARP</strong> | <strong>MAYTAG</strong> | <strong>GE</strong> | <strong>ASKO</strong> | <strong>SMEG</strong> | <strong>ARMCO</strong> | <strong>BUSH</strong> | <strong>SANYO</strong>
-                </p>
+<section id="brands" class="py-5 bg-light" itemscope itemtype="https://schema.org/ItemList">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section-title fw-bold">Appliance Brands We Service</h2>
+                <p class="lead">Our technicians are trained to repair all major appliance brands available in Kenya</p>
             </div>
-            <p class="text-center" style="margin-top: 20px;">And many more! If your brand isn't listed, contact us - we likely service it too.</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="fs-5 text-center lh-lg">
+                            <strong>SAMSUNG</strong> | <strong>LG</strong> | <strong>BEKO</strong> | <strong>BOSCH</strong> | <strong>WHIRLPOOL</strong> | <strong>ARISTON</strong> | <strong>VON HOTPOINT</strong> | <strong>SIEMENS</strong> | <strong>ELECTROLUX</strong> | <strong>RAMTONS</strong> | <strong>ELBA</strong> | <strong>AMANA</strong> | <strong>HOOVER</strong> | <strong>MIELE</strong> | <strong>ZANUSSI</strong> | <strong>PANASONIC</strong> | <strong>FISHER & PAYKEL</strong> | <strong>BRUHM</strong> | <strong>HITACHI</strong> | <strong>FRIGIDAIRE</strong> | <strong>HAIER</strong> | <strong>HP</strong> | <strong>CANDY</strong> | <strong>BAUKNECHT</strong> | <strong>DAEWOO</strong> | <strong>KITCHENAID</strong> | <strong>NEFF</strong> | <strong>IKEA</strong> | <strong>TOSHIBA</strong> | <strong>KENMORE</strong> | <strong>INDESIT</strong> | <strong>MIKA</strong> | <strong>SHARP</strong> | <strong>MAYTAG</strong> | <strong>GE</strong> | <strong>ASKO</strong> | <strong>SMEG</strong> | <strong>ARMCO</strong> | <strong>BUSH</strong> | <strong>SANYO</strong>
+                        </p>
+                    </div>
+                </div>
+                <p class="text-center mt-4">And many more! If your brand isn't listed, contact us - we likely service it too.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -859,71 +608,73 @@
 <hr>
 
 <!-- Areas Covered Section -->
-<section id="areas" class="container" style="margin-top: 50px; margin-bottom: 50px;">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2 class="section-title"><strong>Areas We Cover in Nairobi County</strong></h2>
-            <p class="lead">Professional appliance repair services across all Nairobi estates and regions</p>
+<section id="areas" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title fw-bold">Areas We Cover in Nairobi County</h2>
+                <p class="lead">Professional appliance repair services across all Nairobi estates and regions</p>
+            </div>
         </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-3">
-            <h4><strong>Central Nairobi</strong></h4>
-            <ul>
-                <li>Westlands</li>
-                <li>Parklands</li>
-                <li>Kilimani</li>
-                <li>Kileleshwa</li>
-                <li>Lavington</li>
-                <li>Upperhill</li>
-                <li>Hurlingham</li>
-                <li>Riverside</li>
-            </ul>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <h4 class="fw-bold">Central Nairobi</h4>
+                <ul>
+                    <li>Westlands</li>
+                    <li>Parklands</li>
+                    <li>Kilimani</li>
+                    <li>Kileleshwa</li>
+                    <li>Lavington</li>
+                    <li>Upperhill</li>
+                    <li>Hurlingham</li>
+                    <li>Riverside</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4 class="fw-bold">Northern Suburbs</h4>
+                <ul>
+                    <li>Karen</li>
+                    <li>Runda</li>
+                    <li>Muthaiga</li>
+                    <li>Kitisuru</li>
+                    <li>Spring Valley</li>
+                    <li>Loresho</li>
+                    <li>Ridgeways</li>
+                    <li>Gigiri</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4 class="fw-bold">Eastern Nairobi</h4>
+                <ul>
+                    <li>Embakasi</li>
+                    <li>Donholm</li>
+                    <li>Buruburu</li>
+                    <li>Umoja</li>
+                    <li>Kayole</li>
+                    <li>Komarock</li>
+                    <li>Eastleigh</li>
+                    <li>Makadara</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4 class="fw-bold">Southern & Western</h4>
+                <ul>
+                    <li>South C</li>
+                    <li>South B</li>
+                    <li>Langata</li>
+                    <li>Kasarani</li>
+                    <li>Roysambu</li>
+                    <li>Kahawa</li>
+                    <li>Ruaka</li>
+                    <li>Zimmerman</li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-3">
-            <h4><strong>Northern Suburbs</strong></h4>
-            <ul>
-                <li>Karen</li>
-                <li>Runda</li>
-                <li>Muthaiga</li>
-                <li>Kitisuru</li>
-                <li>Spring Valley</li>
-                <li>Loresho</li>
-                <li>Ridgeways</li>
-                <li>Gigiri</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <h4><strong>Eastern Nairobi</strong></h4>
-            <ul>
-                <li>Embakasi</li>
-                <li>Donholm</li>
-                <li>Buruburu</li>
-                <li>Umoja</li>
-                <li>Kayole</li>
-                <li>Komarock</li>
-                <li>Eastleigh</li>
-                <li>Makadara</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <h4><strong>Southern & Western</strong></h4>
-            <ul>
-                <li>South C</li>
-                <li>South B</li>
-                <li>Langata</li>
-                <li>Kasarani</li>
-                <li>Roysambu</li>
-                <li>Kahawa</li>
-                <li>Ruaka</li>
-                <li>Zimmerman</li>
-            </ul>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 20px;">
-        <div class="col-md-12 text-center">
-            <p><strong>And all other estates, centres, and regions within Nairobi County!</strong></p>
-            <p>Don't see your area listed? Call us - we serve the entire Nairobi County.</p>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="fw-bold">And all other estates, centres, and regions within Nairobi County!</p>
+                <p>Don't see your area listed? Call us - we serve the entire Nairobi County.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -931,379 +682,365 @@
 <hr>
 
 <!-- CTA Section -->
-<section class="container-fluid" style="background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%); padding: 60px 0; color: white;">
-    <div class="container text-center">
-        <h2 style="color: white;"><strong>Need Appliance Repair Services?</strong></h2>
-        <p class="lead" style="font-size: 20px; margin-top: 20px;">Don't let broken appliances disrupt your daily routine. Contact <strong>Best Appliance Repair in Nairobi</strong> today for fast, reliable service!</p>
-        <p style="font-size: 18px; margin-top: 20px;">We offer same-day service for most areas in Nairobi County</p>
-        <div style="margin-top: 40px;">
-            <a href="tel:+254770029959" class="btn btn-success btn-lg" style="margin: 10px; font-size: 18px;"><i class="fa fa-phone"></i> Call: 0770029959</a>
-            <a href="https://wa.me/254770029959" target="_blank" class="btn btn-warning btn-lg" style="margin: 10px; font-size: 18px;"><i class="fa fa-whatsapp"></i> WhatsApp Us</a>
-            <a href="#contact" class="btn btn-default btn-lg" style="margin: 10px; font-size: 18px; background: white; color: #8B0000;">Send Message</a>
+<section class="py-5" style="background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);">
+    <div class="container text-center text-white">
+        <h2 class="fw-bold mb-4">Need Appliance Repair Services?</h2>
+        <p class="lead fs-4 mb-4">Don't let broken appliances disrupt your daily routine. Contact <strong>Best Appliance Repair in Nairobi</strong> today for fast, reliable service!</p>
+        <p class="fs-5 mb-5">We offer same-day service for most areas in Nairobi County</p>
+        <div>
+            <a href="tel:+254770029959" class="btn btn-success btn-lg m-2"><i class="fa fa-phone"></i> Call: 0770029959</a>
+            <a href="https://wa.me/254770029959" target="_blank" class="btn btn-warning btn-lg m-2"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+            <a href="#contact" class="btn btn-light btn-lg m-2" style="color: #8B0000;">Send Message</a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
-<section id="faq" class="container" style="margin-top: 50px; margin-bottom: 50px;" itemscope itemtype="https://schema.org/FAQPage">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2 class="section-title"><strong>Frequently Asked Questions</strong></h2>
-            <p class="lead">Common questions about appliance repair services in Nairobi</p>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq7" itemprop="name">
-                                <strong>7. What payment methods do you accept?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq7" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            We accept cash, M-Pesa, bank transfers, and card payments. Payment is due upon completion of service. For major repairs requiring expensive parts, we may request a deposit.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq8" itemprop="name">
-                                <strong>8. Do you repair commercial appliances?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq8" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Yes, we repair both residential and commercial appliances. Our technicians have experience with commercial-grade refrigerators, washing machines, cookers, and other equipment used in restaurants, hotels, and businesses.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq9" itemprop="name">
-                                <strong>9. Can you repair old or discontinued appliance models?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq9" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Yes, we repair older and discontinued models. While finding parts may take longer, our technicians have experience with legacy models and access to compatible parts. We'll advise on feasibility and cost-effectiveness.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq10" itemprop="name">
-                                <strong>10. Do you offer maintenance services to prevent breakdowns?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq10" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Yes, we offer preventive maintenance services for all appliances. Regular maintenance extends appliance life by 40-50%, reduces energy costs, and prevents up to 80% of common breakdowns. We recommend annual or bi-annual maintenance.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<hr>
-
-<!-- Contact Section -->
-<section id="contact" class="container" style="margin-top: 50px; margin-bottom: 50px;" itemscope itemtype="https://schema.org/ContactPage">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2 class="section-title"><strong>Contact Nairobi Repair Center</strong></h2>
-            <p class="lead">Get in touch with us for professional <strong>Best Appliance Repair in Nairobi</strong> services</p>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 40px;">
-        <div class="col-md-6">
-            <div class="well" style="padding: 30px;">
-                <h3 style="color: #8B0000;"><strong>Contact Information</strong></h3>
-                <p style="font-size: 16px; line-height: 2;">
-                    <i class="fa fa-phone" style="color: #8B0000; margin-right: 10px;"></i> <strong>Phone:</strong> <a href="tel:+254770029959">0770029959</a><br>
-                    <i class="fa fa-whatsapp" style="color: #25D366; margin-right: 10px;"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/254770029959" target="_blank">0770029959</a><br>
-                    <i class="fa fa-envelope" style="color: #8B0000; margin-right: 10px;"></i> <strong>Email:</strong> <a href="mailto:info@bestappliancerepairs.co.ke">info@bestappliancerepairs.co.ke</a><br>
-                    <i class="fa fa-map-marker" style="color: #8B0000; margin-right: 10px;"></i> <strong>Address:</strong> Mpaka Plaza, Westlands, Nairobi, Kenya
-                </p>
-                <h4 style="color: #8B0000; margin-top: 30px;"><strong>Operating Hours</strong></h4>
-                <p style="font-size: 16px;">
-                    Monday - Saturday: 7:00 AM - 8:00 PM<br>
-                    Sunday: 8:00 AM - 6:00 PM<br>
-                    Emergency Service: Available 24/7
-                </p>
-                <h4 style="color: #8B0000; margin-top: 30px;"><strong>Useful Links</strong></h4>
-                <p style="font-size: 16px;">
-                    <a href="https://nairobirepair.co.ke/" target="_blank" rel="noopener">Appliance Repair in Nairobi</a><br>
-                    <a href="https://washingmachinerepairs.co.ke/" target="_blank" rel="noopener">Washing Machine Repair in Nairobi</a><br>
-                    <a href="https://repair.co.ke/" target="_blank" rel="noopener">Repair Service Center</a>
-                </p>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="well" style="padding: 30px;">
-                <h3 style="color: #8B0000;"><strong>Send Us a Message</strong></h3>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="07xxxxxxxx" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="appliance">Appliance Type</label>
-                        <select class="form-control" id="appliance">
-                            <option>Select Appliance</option>
-                            <option>Washing Machine</option>
-                            <option>Refrigerator</option>
-                            <option>Cooker</option>
-                            <option>Oven</option>
-                            <option>Dishwasher</option>
-                            <option>Dryer</option>
-                            <option>Microwave</option>
-                            <option>Water Dispenser</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Your Location</label>
-                        <input type="text" class="form-control" id="location" placeholder="e.g., Westlands, Karen, etc." required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Problem Description</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Briefly describe the problem with your appliance" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-lg" style="background-color: #8B0000; color: white; width: 100%;">
-                        <i class="fa fa-send"></i> Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="container-fluid" style="background-color: #333; color: white; padding: 40px 0;">
+<section id="faq" class="py-5" itemscope itemtype="https://schema.org/FAQPage">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <h4><strong>Nairobi Repair Center</strong></h4>
-                <p>Your trusted partner for professional appliance repair services in Nairobi County. We fix it right, the first time.</p>
-                <p><strong>Best Appliance Repair in Nairobi</strong> - Quality, Reliability, Affordability</p>
-            </div>
-            <div class="col-md-4">
-                <h4><strong>Quick Links</strong></h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="#home" style="color: white;">Home</a></li>
-                    <li><a href="#about" style="color: white;">About Us</a></li>
-                    <li><a href="#services" style="color: white;">Services</a></li>
-                    <li><a href="#brands" style="color: white;">Brands</a></li>
-                    <li><a href="#faq" style="color: white;">FAQ</a></li>
-                    <li><a href="#contact" style="color: white;">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h4><strong>Our Services</strong></h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="#cooker-repair" style="color: white;">Cooker Repair</a></li>
-                    <li><a href="#oven-repair" style="color: white;">Oven Repair</a></li>
-                    <li><a href="#washing-machine-repair" style="color: white;">Washing Machine Repair</a></li>
-                    <li><a href="#dishwasher-repair" style="color: white;">Dishwasher Repair</a></li>
-                    <li><a href="#fridge-repair" style="color: white;">Fridge Repair</a></li>
-                    <li><a href="#dryer-repair" style="color: white;">Tumble Dryer Repair</a></li>
-                    <li><a href="#water-dispenser-repair" style="color: white;">Water Dispenser Repair</a></li>
-                    <li><a href="#microwave-repair" style="color: white;">Microwave Repair</a></li>
-                </ul>
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title fw-bold">Frequently Asked Questions</h2>
+                <p class="lead">Common questions about appliance repair services in Nairobi</p>
             </div>
         </div>
-        <hr style="border-color: #555;">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <p>&copy; 2025 Nairobi Repair Center. All Rights Reserved. | <strong>Best Appliance Repair in Nairobi</strong></p>
-                <p>Professional appliance repair services across Nairobi County</p>
+            <div class="col-lg-10 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <strong itemprop="name">1. How quickly can you respond to repair requests?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="accordion-body" itemprop="text">
+                                We offer same-day service for most areas in Nairobi County. For emergency repairs, we can typically arrive within 2-4 hours of your call. Regular appointments are usually scheduled within 24 hours.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <strong itemprop="name">2. Do you provide warranty on repairs?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="accordion-body" itemprop="text">
+                                Yes, we provide 30-90 days warranty on all repairs and installed parts depending on the type of repair. If the same issue occurs within the warranty period, we fix it at no additional cost.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <strong itemprop="name">3. Do I need to be home during the repair?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="accordion-body" itemprop="text">
+                                Yes, someone needs to be present to provide access to the appliance and approve the repair work. However, you don't need to stay nearby - our technicians work independently and will update you when complete.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <strong itemprop="name">4. Do you use genuine spare parts?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="accordion-body" itemprop="text">
+                                Yes, we prioritize genuine manufacturer parts. When genuine parts are unavailable, we use high-quality compatible parts from reputable suppliers. We always inform you about the parts being used.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                <strong itemprop="name">5. How much does appliance repair cost?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="accordion-body" itemprop="text">
+                                Costs vary depending on the appliance and issue. Diagnostic fees range from Ksh 500-1,000, basic repairs from Ksh 1,500-3,000, and major repairs from Ksh 6,000-20,000. We provide detailed estimates before starting work.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                <strong itemprop="name">6. Should I repair or replace my appliance?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <div class="accordion-body" itemprop="text">
+                                Generally, if repair costs are less than 50% of replacement cost and your appliance is under 7-10 years old, repair is worthwhile. Our technicians provide honest assessments to help you decide.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                <strong itemprop="name">7. What payment methods do you accept?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" data- Oven Repairs:</h4>
+                <p>Our oven repair services cover heating element testing and replacement, thermostat calibration for accurate temperature control, door seal and hinge repairs, igniter replacement for gas ovens, fan motor repairs for convection ovens, control board diagnostics and repairs, and safety system checks. We ensure your oven operates safely and efficiently.</p>
+
+                <h4 class="fw-bold">Oven Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Inspection</td>
+                                <td>500 - 1,000</td>
+                                <td>30-45 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Heating Element Replacement</td>
+                                <td>2,500 - 5,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Thermostat Calibration</td>
+                                <td>2,000 - 4,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Door Seal Replacement</td>
+                                <td>1,500 - 3,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Igniter Replacement (Gas)</td>
+                                <td>3,000 - 6,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Control Board Repair</td>
+                                <td>4,000 - 8,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted fst-italic"><em>"Maintenance advice: Calibrate your oven temperature every 6 months to ensure accurate cooking. A temperature variance of just 25 degrees can significantly affect baking results."</em></p>
             </div>
         </div>
-    </div>
-</footer>
 
-<!-- Floating Buttons -->
-<div class="floating-buttons">
-    <a href="tel:+254770029959" class="floating-btn call-btn" title="Call Us">
-        <i class="fa fa-phone"></i>
-    </a>
-    <a href="https://wa.me/254770029959" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
-        <i class="fa fa-whatsapp"></i>
-    </a>
-</div>
+        <hr class="my-5">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-<script>
-// Wait for jQuery to load
-(function() {
-    'use strict';
-    
-    // Smooth scrolling for anchor links
-    document.addEventListener('DOMContentLoaded', function() {
-        var links = document.querySelectorAll('a[href^="#"]');
-        
-        for (var i = 0; i < links.length; i++) {
-            links[i].addEventListener('click', function(e) {
-                var targetId = this.getAttribute('href');
-                if (targetId && targetId !== '#') {
-                    e.preventDefault();
-                    var targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        var offsetTop = targetElement.offsetTop - 60;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        }
-        
-        // Form submission handler
-        var form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
+        <!-- Service 3: Washing Machine Repair -->
+        <div class="row mb-5" id="washing-machine-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Washing Machine Repair Icon">
+                        <title>Washing Machine Repair in Nairobi</title>
+                        <rect x="20" y="15" width="60" height="70" fill="#8B0000" rx="5"/>
+                        <circle cx="50" cy="50" r="20" fill="#DC143C" stroke="white" stroke-width="2"/>
+                        <circle cx="35" cy="25" r="3" fill="white"/>
+                        <circle cx="50" cy="25" r="3" fill="white"/>
+                        <circle cx="65" cy="25" r="3" fill="white"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">3. Washing Machine Repair in Nairobi</h3>
+                </div>
+                <p itemprop="description">Washing machines are among the most frequently used appliances in any household. When your washing machine breaks down, laundry piles up quickly. Our team at <strong>Best Appliance Repair in Nairobi</strong> specializes in <a href="https://washingmachinerepairs.co.ke/" target="_blank" rel="noopener">washing machine repair in Nairobi</a>, handling both top-loading and front-loading models from all major brands.</p>
                 
-                var name = document.getElementById('name').value;
-                var phone = document.getElementById('phone').value;
-                var appliance = document.getElementById('appliance').value;
-                var location = document.getElementById('location').value;
-                var message = document.getElementById('message').value;
+                <h4 class="fw-bold">Washing Machine Problems We Solve:</h4>
+                <ul>
+                    <li>Machine not starting or powering on</li>
+                    <li>Drum not spinning or spinning poorly</li>
+                    <li>Water not draining after wash cycle</li>
+                    <li>Excessive vibration and loud noises</li>
+                    <li>Water leaking from machine</li>
+                    <li>Door won't lock or unlock</li>
+                    <li>Error codes displayed on control panel</li>
+                    <li>Clothes coming out wet after spin cycle</li>
+                    <li>Water not filling or filling slowly</li>
+                    <li>Foul odors from machine interior</li>
+                </ul>
+
+                <h4 class="fw-bold">Comprehensive Washing Machine Repairs:</h4>
+                <p>We provide complete washing machine repair services including motor and drive belt replacement, pump cleaning and replacement, drum bearing repairs, water inlet valve repairs, door lock mechanism fixes, control board diagnostics and repairs, suspension system repairs, filter cleaning, and hose replacement. Our technicians carry common spare parts for immediate repairs.</p>
+
+                <h4 class="fw-bold">Washing Machine Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Check</td>
+                                <td>500 - 1,000</td>
+                                <td>30 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Pump Replacement</td>
+                                <td>2,500 - 5,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Motor Replacement</td>
+                                <td>5,000 - 10,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Drum Bearing Replacement</td>
+                                <td>6,000 - 12,000</td>
+                                <td>3-4 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Door Lock Repair</td>
+                                <td>1,500 - 3,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Control Board Repair</td>
+                                <td>4,000 - 8,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted fst-italic"><em>"Care tip: Clean your washing machine filter every month and run a hot water cycle with vinegar quarterly to prevent buildup and odors. This simple maintenance can extend your machine's life by years."</em></p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Service 4: Dishwasher Repair -->
+        <div class="row mb-5" id="dishwasher-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Dishwasher Repair Icon">
+                        <title>Dishwasher Repair in Nairobi</title>
+                        <rect x="25" y="20" width="50" height="60" fill="#8B0000" rx="3"/>
+                        <rect x="30" y="30" width="40" height="45" fill="#DC143C"/>
+                        <line x1="35" y1="35" x2="65" y2="35" stroke="white" stroke-width="2"/>
+                        <line x1="35" y1="45" x2="65" y2="45" stroke="white" stroke-width="2"/>
+                        <line x1="35" y1="55" x2="65" y2="55" stroke="white" stroke-width="2"/>
+                        <circle cx="35" cy="25" r="2" fill="white"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">4. Dishwasher Repair in Nairobi</h3>
+                </div>
+                <p itemprop="description">Dishwashers save valuable time and provide superior cleaning compared to hand washing. When your dishwasher malfunctions, returning to manual dish washing is inconvenient and time-consuming. Our <strong>Best Appliance Repair in Nairobi</strong> technicians are experts in dishwasher repair for all brands and models.</p>
                 
-                if (name && phone && appliance && location && message) {
-                    alert('Thank you for contacting us, ' + name + '! We will get back to you shortly. You can also call us directly at 0770029959 for immediate assistance.');
-                    this.reset();
-                } else {
-                    alert('Please fill in all required fields.');
-                }
-            });
-        }
-    });
-    
-    // Collapse navbar on mobile after clicking a link
-    if (typeof $ !== 'undefined') {
-        $(document).ready(function(){
-            $('.navbar-collapse a').on('click', function(){
-                if ($(window).width() < 768) {
-                    $('.navbar-collapse').collapse('hide');
-                }
-            });
-        });
-    }
-})();
-</script>
+                <h4 class="fw-bold">Dishwasher Problems We Fix:</h4>
+                <ul>
+                    <li>Dishes coming out dirty or with food residue</li>
+                    <li>Water not draining properly after cycle</li>
+                    <li>Machine not filling with water</li>
+                    <li>Unusual grinding or humming noises</li>
+                    <li>Door latch not engaging or closing</li>
+                    <li>Heating element not working</li>
+                    <li>Spray arms not rotating effectively</li>
+                    <li>Detergent dispenser malfunctions</li>
+                    <li>Control panel errors and display issues</li>
+                    <li>Water leaking from door or base</li>
+                </ul>
 
-</body>
-</html>4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq1" itemprop="name">
-                                <strong>1. How quickly can you respond to repair requests?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq1" class="panel-collapse collapse in" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            We offer same-day service for most areas in Nairobi County. For emergency repairs, we can typically arrive within 2-4 hours of your call. Regular appointments are usually scheduled within 24 hours.
-                        </div>
-                    </div>
+                <h4 class="fw-bold">Expert Dishwasher Repair Services:</h4>
+                <p>We offer comprehensive dishwasher repairs including pump cleaning and replacement, heating element testing and replacement, spray arm repairs, door seal and latch repairs, control board diagnostics, water inlet valve repairs, drain hose cleaning, filter replacement, and rack repair or replacement. We ensure your dishwasher cleans dishes effectively and efficiently.</p>
+
+                <h4 class="fw-bold">Dishwasher Repair Service Costs</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="bg-dark-red text-white">
+                            <tr>
+                                <th>Repair Type</th>
+                                <th>Cost Range (Ksh)</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diagnostic Service</td>
+                                <td>500 - 1,000</td>
+                                <td>30 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Pump Repair/Replacement</td>
+                                <td>3,000 - 6,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Heating Element Replacement</td>
+                                <td>2,500 - 5,000</td>
+                                <td>1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Door Seal Replacement</td>
+                                <td>1,500 - 3,000</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Spray Arm Replacement</td>
+                                <td>1,000 - 2,500</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Control Board Repair</td>
+                                <td>4,000 - 8,000</td>
+                                <td>2-3 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq2" itemprop="name">
-                                <strong>2. Do you provide warranty on repairs?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq2" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Yes, we provide 30-90 days warranty on all repairs and installed parts depending on the type of repair. If the same issue occurs within the warranty period, we fix it at no additional cost.
-                        </div>
-                    </div>
-                </div>
+                <p class="text-muted fst-italic"><em>"Usage tip: Scrape large food particles before loading dishes and clean the filter monthly. Use rinse aid to prevent water spots and ensure proper drying for sparkling clean dishes every time."</em></p>
+            </div>
+        </div>
 
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq3" itemprop="name">
-                                <strong>3. Do I need to be home during the repair?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq3" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Yes, someone needs to be present to provide access to the appliance and approve the repair work. However, you don't need to stay nearby - our technicians work independently and will update you when complete.
-                        </div>
-                    </div>
-                </div>
+        <hr class="my-5">
 
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq4" itemprop="name">
-                                <strong>4. Do you use genuine spare parts?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq4" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Yes, we prioritize genuine manufacturer parts. When genuine parts are unavailable, we use high-quality compatible parts from reputable suppliers. We always inform you about the parts being used.
-                        </div>
-                    </div>
+        <!-- Service 5: Fridge Repair -->
+        <div class="row mb-5" id="fridge-repair" itemscope itemtype="https://schema.org/Service">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Fridge Repair Icon">
+                        <title>Fridge Repair in Nairobi</title>
+                        <rect x="30" y="15" width="40" height="70" fill="#8B0000" rx="3"/>
+                        <line x1="30" y1="50" x2="70" y2="50" stroke="white" stroke-width="2"/>
+                        <rect x="35" y="25" width="5" height="15" fill="white"/>
+                        <rect x="35" y="60" width="5" height="15" fill="white"/>
+                    </svg>
+                    <h3 class="section-title fw-bold" itemprop="name">5. Fridge Repair in Nairobi</h3>
                 </div>
+                <p itemprop="description">Refrigerators are critical appliances that operate 24/7 to preserve food and prevent spoilage. A malfunctioning fridge can lead to food waste and health concerns. <strong>Best Appliance Repair in Nairobi</strong> provides fast, reliable refrigerator repair services for all types including single-door, double-door, side-by-side, and French door models.</p>
+                
+                <h4 class="fw-bold">Common Fridge Problems We Address:</h4>
+                <ul>
+                    <li>Refrigerator not cooling or freezing properly</li>
+                    <li>Excessive frost buildup in freezer</li>
+                    <li>Water leaking inside or outside fridge</li>
+                    <li>Unusual noises - buzzing, clicking, or humming</li>
+                    <li>Ice maker not producing ice</li>
+                    <li>Water dispenser not working</li>
+                    <li>Door seal damaged causing air leaks</li>
+                    <li>Thermostat not maintaining temperature</li>
+                    <li>Compressor running constantly</li>
+                    <li>Condensation on exterior surfaces</li>
+                </ul>
 
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq5" itemprop="name">
-                                <strong>5. How much does appliance repair cost?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq5" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Costs vary depending on the appliance and issue. Diagnostic fees range from Ksh 500-1,000, basic repairs from Ksh 1,500-3,000, and major repairs from Ksh 6,000-20,000. We provide detailed estimates before starting work.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#faq6" itemprop="name">
-                                <strong>6. Should I repair or replace my appliance?</strong>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="faq6" class="panel-collapse collapse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div class="panel-body" itemprop="text">
-                            Generally, if repair costs are less than 50% of replacement cost and your appliance is under 7-10 years old, repair is worthwhile. Our technicians provide honest assessments to help you decide.
-                        </div>
-                    </div>
-                </div>
-
-                 
+                <h4 class="fw-bold">Professional
